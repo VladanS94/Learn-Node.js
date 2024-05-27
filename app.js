@@ -19,6 +19,7 @@ const tours = JSON.parse(
     fs.readFileSync(`${__dirname}/dev-data/data/tours-simple.json`)
 );
 
+
 const getAllTours = (req, res) => {
     console.log(req.requstTime);
         res
@@ -92,7 +93,7 @@ const deleteTour = (req, res) => {
     if(req.params.id * 1 > tours.length){
         return res.status(404).json({
             status: 'Fail',
-            message: 'Invalid ID'
+            message: 'Invalid ID 123'
         })
     }
     res.status(204).json({
