@@ -93,7 +93,7 @@ const deleteTour = (req, res) => {
     if(req.params.id * 1 > tours.length){
         return res.status(404).json({
             status: 'Fail',
-            message: 'Invalid ID 123'
+            message: 'Invalid ID'
         })
     }
     res.status(204).json({
