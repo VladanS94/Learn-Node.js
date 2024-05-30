@@ -1,7 +1,11 @@
 const fs = require('fs');
 const express = require('express');
+const morgan = require('morgan');
 
 const app = express();
+
+// 1) MIDDLEWEARE
+app.use(morgan('dev'))
 
 app.use(express.json());
 
@@ -20,6 +24,7 @@ const tours = JSON.parse(
 );
 
 
+// 2) ROUTE HANDLERS
 const getAllTours = (req, res) => {
     console.log(req.requstTime);
         res
@@ -102,6 +107,37 @@ const deleteTour = (req, res) => {
     })
 }
 
+const getAllUsers = (req, res) => {
+    res.status(500).json({
+        status: 'error',
+        message: 'This route is not yet defined'
+    })
+}
+const createUser = (req, res) => {
+    res.status(500).json({
+        status: 'error',
+        message: 'This route is not yet defined'
+    })
+}
+const getUser = (req, res) => {
+    res.status(500).json({
+        status: 'error',
+        message: 'This route is not yet defined'
+    })
+}
+const updateUser = (req, res) => {
+    res.status(500).json({
+        status: 'error',
+        message: 'This route is not yet defined'
+    })
+}
+const deleteUser = (req, res) => {
+    res.status(500).json({
+        status: 'error',
+        message: 'This route is not yet defined'
+    })
+}
+
 // READ METHOD
 // app.get('/api/v1/tours', getAllTours);
 
@@ -118,6 +154,8 @@ const deleteTour = (req, res) => {
 // app.delete('/api/v1/tours/:id', deleteTour);
 
 // BETTER CODE FOR GET AND POST METHOD
+
+// ALL ROUTES
 app
 .route('/api/v1/tours')
 .get(getAllTours)
@@ -128,8 +166,21 @@ app
 .route('/api/v1/tours/:id')
 .get(getTour)
 .patch(updateTour)
-.delete(deleteTour)
+.delete(deleteTour);
 
+
+
+app.route('/api/v1/users')
+.get(getAllUsers)
+.post(createUser);
+
+app.route('api/v1/users/:id')
+.get(getUser)
+.patch(updateUser)
+.delete(deleteUser);
+
+
+// START SERVER
 const port = 3000;
 app.listen(port, () => {
     console.log(`App runing on port ${port}...`);
