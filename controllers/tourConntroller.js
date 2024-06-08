@@ -7,7 +7,6 @@ const tours = JSON.parse(
 
 
 exports.getAllTours = (req, res) => {
-    console.log(req.requstTime);
     res.status(200).json({
       status: 'succes',
       requestedAt: req.requstTime,
@@ -83,4 +82,3 @@ exports.deleteTour = (req, res) => {
       data: null,
     });
   };
-
