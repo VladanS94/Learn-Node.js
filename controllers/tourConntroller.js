@@ -25,16 +25,6 @@ const tours = JSON.parse(
     next();
   }
 
-exports.getAllTours = (req, res) => {
-    res.status(200).json({
-      status: 'succes',
-      requestedAt: req.requstTime,
-      data: {
-        tours,
-      },
-    });
-  };
-  
 exports.getTour = (req, res) => {
     const id = req.params.id * 1;
     const tour = tours.find((el) => el.id === id);
