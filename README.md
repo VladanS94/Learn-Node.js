@@ -9,3 +9,4 @@ And today
 later I will study
 Learn MongoDB
 Still learning mongoDB
+Connect Atlas with Compas and Shell
