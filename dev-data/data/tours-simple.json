@@ -205,57 +205,5 @@
             "2022-01-16,10:00",
             "2022-12-12,10:00"
         ]
-    },
-    {
-        "id": 9,
-        "name": "The Forest Hiker",
-        "duration": 10,
-        "difficulty": "easy"
-    },
-    {
-        "id": 10,
-        "name": "The Forest Hiker",
-        "duration": 10,
-        "difficulty": "easy"
-    },
-    {
-        "id": 11,
-        "name": "The Forest Hiker",
-        "duration": 10,
-        "difficulty": "easy"
-    },
-    {
-        "id": 12,
-        "name": "Bret.Gerlach",
-        "duration": 1,
-        "difficulty": "easy"
-    },
-    {
-        "id": 13,
-        "name": "Winfield65",
-        "duration": 5,
-        "difficulty": "easy"
-    },
-    {
-        "id": 14,
-        "name": "Eino_Schroeder34",
-        "duration": 2,
-        "difficulty": "easy"
-    },
-    {
-        "id": 15,
-        "name": "Marianna.Torphy",
-        "duration": 6,
-        "difficulty": "easy"
-    },
-    {
-        "id": 16,
-        "name": "Dovie99",
-        "duration": 2,
-        "difficulty": "easy"
-    },
-    {
-        "id": 17,
-        "duration": 15
     }
 ]
